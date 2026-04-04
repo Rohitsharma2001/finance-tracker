@@ -1,0 +1,53 @@
+## 📘 Documentation
+
+### Setup Process
+
+1. Install Node.js and MongoDB
+2. Go to backend folder and run:
+   npm install
+   node app.js
+3. Open frontend using Live Server
+
+The backend runs on `http://localhost:5000` and frontend runs on `http://127.0.0.1:5500`.
+
+---
+
+### API Explanation
+
+* **GET /api/transactions**
+  Fetch all transactions from database
+
+* **POST /api/transactions**
+  Add a new transaction (title, amount, type)
+
+* **DELETE /api/transactions/:id**
+  Delete a transaction using its ID
+
+---
+
+### Assumptions Made
+
+* Only one admin user is used (no multi-user system)
+* Authentication is handled using localStorage (for simplicity)
+* Data is stored locally in MongoDB
+
+---
+
+### Trade-offs
+
+* Did not implement full JWT authentication to keep the project simple
+* No user registration system added
+* Focus was on core functionality and clean UI instead of complex architecture
+
+---
+
+## 💡 Additional Thoughtfulness
+
+* Designed a modern dashboard UI using glassmorphism
+* Added real-time balance calculation
+* Implemented chart visualization using Chart.js
+* Added input validation and error handling
+* Used clean and readable code structure
+* Added confirmation before deleting transactions
+
+This improves usability and gives a better user experience.

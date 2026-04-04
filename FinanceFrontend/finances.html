@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Finance Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="main">
+
+  <h1>💰 Finance Tracker</h1>
+
+  <div class="card">
+
+    <h2 id="balance">Balance: ₹0</h2>
+    
+    <h3>Total Income: ₹<span id="income">0</span></h3>
+<h3>Total Expense: ₹<span id="expense">0</span></h3>
+
+    <!-- FORM -->
+    <form id="form" class="form">
+      <input type="text" id="title" placeholder="Enter Title">
+      <input type="number" id="amount" placeholder="Enter Amount">
+
+      <select id="type">
+        
+        <option value="income">💚 Income</option>
+        <option value="expense">❤️ Expense</option>
+      </select>
+
+      <button type="submit">+ Add</button>
+    </form>
+
+    <!-- TRANSACTIONS -->
+    <div class="transactions">
+      <h3>📊 Transactions</h3>
+      <ul id="list"></ul>
+      <canvas id="chart" height="100"></canvas>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</body>
+</html>

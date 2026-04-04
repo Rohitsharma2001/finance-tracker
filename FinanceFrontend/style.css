@@ -1,0 +1,136 @@
+/* ===== BODY ===== */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* ===== TITLE ===== */
+h1 {
+  margin-top: 30px;
+  font-size: 42px;
+  letter-spacing: 1px;
+  animation: fadeDown 1s ease;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+  animation: fadeUp 1s ease;
+}
+
+/* ===== INPUTS ===== */
+form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+input, select {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  width: 140px;
+  transition: 0.3s;
+}
+
+input:focus, select:focus {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #00ffcc;
+}
+
+/* ===== BUTTON ===== */
+button {
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #00c6ff;
+}
+
+/* ===== BALANCE ===== */
+#balance {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* ===== LIST ===== */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* ===== TRANSACTION ITEM ===== */
+li {
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: slideIn 0.5s ease;
+  transition: 0.3s;
+}
+
+li:hover {
+  transform: translateX(5px);
+}
+
+/* ===== INCOME ===== */
+.income {
+  background: linear-gradient(45deg, #00ff9d33, #00ff9d66);
+  border-left: 5px solid #00ff9d;
+}
+
+/* ===== EXPENSE ===== */
+.expense {
+  background: linear-gradient(45deg, #ff004c33, #ff004c66);
+  border-left: 5px solid #ff004c;
+}
+
+/* ===== DELETE BUTTON ===== */
+.delete-btn {
+  background: #ff004c;
+  border-radius: 8px;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+
+.delete-btn:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px red;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
